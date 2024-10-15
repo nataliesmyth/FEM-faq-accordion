@@ -1,16 +1,19 @@
 const toggleBtns = document.querySelectorAll('.toggle-answer-icon');
 const answers = document.querySelectorAll('.answer')
 const answersArr = [ ...answers];
-console.log(answersArr);
 
 // attach a click event listener to each toggleBtn
 // toggle hidden from the answer to the question the icon is attached to
 
 function toggleAnswer() {
-  console.log('toggleAnswer fired!!')
-  console.log(this.parentElement.nextElementSibling)
   let answer = this.parentElement.nextElementSibling;
-  answer.classList.toggle('hidden')
+  let img = this;
+  img.classList.toggle('plus-icon');
+  img.classList.toggle('minus-icon');
+  answer.classList.toggle('hidden');
+  // if (img.classList.contains('plus-icon')) {
+  //   img.src='assets/images/icon-minus.svg'
+  // }
 }
 
 toggleBtns.forEach((btn) => {

@@ -134,7 +134,7 @@ body {
 }
 
 .container {
-  margin: 5em 1em;
+  margin: 10em 1em;
   padding: 1em;
   background-color: hsl(var(--clr-white));
   border-radius: 10px;
@@ -166,15 +166,16 @@ body {
   width: 30px;
   height: 30px;
 }
+
 .question-text {
   font-size: 1rem;
   font-weight: var(--fw-semi-bold);
   color: hsl(var(--clr-dark));
   margin-block: 1em;
+  width: 85%
 }
 
 .faq-content > .card {
-  /* border-top: 1px solid hsl(var(--clr-light)); */
   border-bottom: 1px solid hsl(var(--clr-light));
 }
 
@@ -190,6 +191,7 @@ body {
 }
 
 .star-icon {
+  opacity: .15;
   width: 20.99px;
   height: 20.99px;
 }
@@ -202,6 +204,13 @@ body {
   background: url(./assets/images/icon-plus.svg);
   width: 30px;
   height: 30px;
+  opacity: .15;
+}
+
+.minus-icon {
+  background: url(./assets/images/icon-minus.svg);
+  width: 30px;
+  height: 30px;
 }
 
 .minus-icon {
@@ -211,6 +220,10 @@ body {
 .plus-icon,
 .minus-icon {
   background-repeat: no-repeat;
+}
+
+.faq-content > .last-card {
+  border-bottom: none;
 }
 
 @media (min-width: 1440px) {
