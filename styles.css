@@ -123,7 +123,7 @@ body {
 
 .main {
   background: url(./assets/images/background-pattern-mobile.svg);
-  position: relative;
+  position: absolute;
   top: 0;
   height: 15rem;
   width: 100%;
@@ -138,7 +138,7 @@ body {
   padding: 1em;
   background-color: hsl(var(--clr-white));
   border-radius: 10px;
-  position: absolute;
+  max-width: 600px;
 }
 
 .title {
@@ -147,14 +147,6 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
-
-/* .card {
-  margin-block: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .question {
   display: flex;
@@ -226,8 +218,38 @@ body {
   border-bottom: none;
 }
 
+.attribution {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .container {
+    margin-inline: auto;
+  }
+}
+
 @media (min-width: 1440px) {
-  body {
+  .main {
     background: url(./assets/images/background-pattern-desktop.svg);
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .star-icon,
+  .plus-icon {
+    opacity: 1;
+  }
+
+  .star-icon {
+    width: 34.99px;
+    height: 34.99px;
+  }
+  .answer {
+    font-size: 1rem;
   }
 }
