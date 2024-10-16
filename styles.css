@@ -163,8 +163,8 @@ body {
   font-size: 1rem;
   font-weight: var(--fw-semi-bold);
   color: hsl(var(--clr-dark));
-  margin-block: 1em;
-  width: 85%
+  margin-block: 1.5em;
+  width: 95%
 }
 
 .faq-content > .card {
@@ -179,7 +179,11 @@ body {
   font-size: 0.875rem;
   font-weight: 300;
   color: hsl(var(--clr-text-answer));
-  padding-block: 1em;
+  padding-block-end: 1em;
+}
+
+.answer > p {
+  padding-block-end: 1em;
 }
 
 .star-icon {
@@ -237,6 +241,7 @@ body {
   }
 
   .title {
+    margin-block: .25em;
     font-size: 56px;
   }
 
