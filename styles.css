@@ -2,6 +2,7 @@
   --clr-white: 0 0 100;
   --clr-light: 275 100 97;
   --clr-purple: 292 16 49;
+  --clr-pink: 281 83 54;
   --clr-dark: 292 42 14;
   --clr-text-answer: 292 27 57;
 
@@ -165,6 +166,14 @@ body {
   color: hsl(var(--clr-dark));
   margin-block: 1.5em;
   width: 95%
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.question:hover > .question-text {
+  color: hsl( var(--clr-pink) );
 }
 
 .faq-content > .card {
